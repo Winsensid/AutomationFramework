@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Automation" parallel="false" >
+    <!--parallel="false"-->
+
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserVersion" value="85.0.4183.102"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="url" value="https://www.zappos.com/"/>
+
+
+    <test name = "ZapposHomePage">
+
+        <classes>
+            <class name="page_objects_test.HomePageTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
